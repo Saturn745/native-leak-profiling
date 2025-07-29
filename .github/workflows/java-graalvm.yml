@@ -55,6 +55,6 @@ jobs:
                 platforms: linux/amd64,linux/arm64
                 file: ./java-graalvm/${{ matrix.tag }}/Dockerfile
                 push: true
-                tags: ghcr.io/skullians/native-leak-profiling:java_${{ matrix.tag }}_graalvm
+                tags: ghcr.io/saturn745/native-leak-profiling:java_${{ matrix.tag }}_graalvm
                 cache-from: type=gha
                 cache-to: type=gha,mode=max
